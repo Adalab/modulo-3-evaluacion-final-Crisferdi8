@@ -1,8 +1,8 @@
 
 
-function FilterByname() {
+function FilterByname({ onChangeName }) {
     const handleChange = (ev) => {
-        console.log(ev.target.value)
+        onChangeName(ev.target.value);
     }
     return (
         <>
