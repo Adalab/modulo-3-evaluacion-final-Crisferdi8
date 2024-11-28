@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function UserDetails({ character }) {
     console.log(character)
@@ -10,6 +10,10 @@ function UserDetails({ character }) {
             <p>EPISODIOS--{character.episodes}</p>
             <p>PLANETA--{character.planet}</p>
             <p>STATUS--{character.status}</p>
+            <Link to="/">
+                <button>Volver</button>
+            </Link>
+
         </div>
 
 

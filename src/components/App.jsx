@@ -42,8 +42,10 @@ function App() {
     //FILTRAR
 
     const filteredCharacters = characters.filter((character) => {
-        return character.name.includes(filterName);
+        return character.name.toLowerCase().includes(filterName.toLowerCase());
     })
+
+
 
     //RUTA DINÁMICA
 
@@ -52,7 +54,7 @@ function App() {
 
     const { pathname } = useLocation();
     const routeData = matchPath("/character/:idCharacter", pathname);
-    console.log(routeData);
+
     const idUser = routeData !== null ? routeData.params.idCharacter : null
     console.log(idUser);
     const user = characters.find((character) => {
