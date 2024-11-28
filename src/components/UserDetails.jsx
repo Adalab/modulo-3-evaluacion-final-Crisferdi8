@@ -1,15 +1,15 @@
 
 
-function UserDetails() {
+function UserDetails({ character }) {
+    console.log(character)
     return (
         <div>
-            <img src="" alt="" />
-            <h4>Nombre</h4>
-            <p>Especie</p>
-            <p>Episodios</p>
-            <p>id</p>
-            <p>Planeta</p>
-            <p>Status</p>
+            <img src={character.photo} alt={character.name} />
+            <h4>NOMBRE--{character.name}</h4>
+            <p>ESPECIE--{character.species}</p>
+            <p>EPISODIOS--{character.episodes}</p>
+            <p>PLANETA--{character.planet}</p>
+            <p>STATUS--{character.status}</p>
         </div>
 
 

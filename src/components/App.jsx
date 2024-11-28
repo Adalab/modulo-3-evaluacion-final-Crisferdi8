@@ -48,9 +48,19 @@ function App() {
     //RUTA DINÁMICA
 
 
+    console.log(filteredCharacters);
 
     const { pathname } = useLocation();
     const routeData = matchPath("/character/:idCharacter", pathname);
+    console.log(routeData);
+    const idUser = routeData !== null ? routeData.params.idCharacter : null
+    console.log(idUser);
+    const user = characters.find((character) => {
+        return character.id == idUser
+    })
+    console.log(user);
+
+
 
     console.log(routeData)
     return (
@@ -66,7 +76,7 @@ function App() {
                             <CharacterList characters={filteredCharacters} />
                         </>
                     )} />
-                    <Route path="/character/:idCharacter" element={<UserDetails />} />
+                    <Route path="/character/:idCharacter" element={<UserDetails character={user} />} />
                 </Routes>
 
             </main>
