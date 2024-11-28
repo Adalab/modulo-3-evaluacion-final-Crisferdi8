@@ -1,8 +1,37 @@
-# React + Vite
+# RICK AND MORTY
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lista de Personajes de Rick and Morty
+Este proyecto es una aplicación web desarrollada con React que permite visualizar un listado de personajes de la serie Rick and Morty. Incluye funcionalidades como búsqueda por nombre y visualización detallada de cada personaje utilizando rutas dinámicas con React Router.
 
-Currently, two official plugins are available:
+Características
+Listado de personajes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Muestra los primeros 20 personajes de Rick and Morty utilizando la API oficial: Rick and Morty API.
+Por cada personaje, se muestran:
+Foto.
+Nombre.
+Especie.
+Filtrado por nombre:
+
+Incluye un input de búsqueda para filtrar los personajes por nombre.
+La búsqueda es dinámica y no distingue entre mayúsculas y minúsculas.
+Detalles de personajes:
+
+Al hacer clic en un personaje, se accede a una página con información detallada:
+Foto.
+Nombre.
+Especie.
+Planeta de origen.
+Número de episodios en los que aparece.
+Estado (vivo, muerto o desconocido).
+Implementado con rutas dinámicas utilizando React Router DOM.
+Componentización:
+
+Componentes principales:
+Filters: Componente para el input de búsqueda.
+CharacterList: Muestra el listado de personajes.
+CharacterItem: Tarjeta individual para cada personaje.
+UserDetails: Página de detalle para un personaje específico.
+
+
+
