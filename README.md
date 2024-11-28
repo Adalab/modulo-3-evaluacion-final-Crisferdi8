@@ -34,22 +34,4 @@ CharacterItem: Tarjeta individual para cada personaje.
 UserDetails: Página de detalle para un personaje específico.
 
 
-# # Instalación y Uso
-1. Clonar el repositorio
-bash
-Copiar código
-git clone https://github.com/tu-repositorio/rick-and-morty-app.git
-cd rick-and-morty-app
-2. Instalar dependencias
-Asegúrate de tener Node.js instalado. Luego ejecuta:
 
-bash
-Copiar código
-npm install
-3. Ejecutar la aplicación
-Inicia el servidor de desarrollo con:
-
-bash
-Copiar código
-npm start
-La aplicación estará disponible en http://localhost:3000.
