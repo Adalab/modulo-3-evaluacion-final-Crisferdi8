@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
+
 function UserDetails({ character }) {
     console.log(character)
     return (
-        <div>
+        <div >
             <img src={character.photo} alt={character.name} />
             <h4>NOMBRE--{character.name}</h4>
             <p>ESPECIE--{character.species}</p>

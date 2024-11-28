@@ -15,6 +15,7 @@ filtramos con lo que coincida
 
 
 import "../scss/App.scss";
+import "../scss/layout/Main.scss";
 import CharacterList from "./CharacterList";
 import Filters from "./filters/Filters";
 import UserDetails from "./UserDetails";
@@ -24,10 +25,12 @@ import { Routes, Route, useLocation, matchPath } from "react-router-dom";
 
 
 
+
 function App() {
 
     const [characters, setCharacters] = useState([]);
     const [filterName, setFilterName] = useState("");
+
 
     useEffect(() => {
         getCharactersFromApi().then((charactersData) => {
@@ -35,6 +38,7 @@ function App() {
 
         })
     }, [])
+
 
     const handleFilterName = (valueInput) => {
         setFilterName(valueInput);
@@ -67,10 +71,11 @@ function App() {
     console.log(routeData)
     return (
         <>
-            <header>
-                <h1>Lista de personajes</h1>
+            <header className="container">
+                <img className="image" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Rick_and_Morty_title_card_%28cropped%29.png" alt="" />
+
             </header>
-            <main>
+            <main className="container">
                 <Routes>
                     <Route path="/" element={(
                         <>
@@ -81,7 +86,9 @@ function App() {
                     <Route path="/character/:idCharacter" element={<UserDetails character={user} />} />
                 </Routes>
 
+
             </main>
+
         </>
 
     )

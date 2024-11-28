@@ -11,7 +11,7 @@ function CharacterList({ characters }) {
 
     return (
         <section>
-            <h2>Lista de personajes</h2>
+
             <ul>
                 {characterElements}
             </ul>

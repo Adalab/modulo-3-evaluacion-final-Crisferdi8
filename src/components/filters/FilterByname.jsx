@@ -6,8 +6,11 @@ function FilterByname({ onChangeName }) {
     }
     return (
         <>
-            <label htmlFor="name">Nombre</label>
-            <input type="text" id="name" onChange={handleChange} />
+            <form className="form">
+                <label htmlFor="name">Nombre</label>
+                <input type="text" id="name" onChange={handleChange} />
+            </form>
+
         </>
     );
 }
