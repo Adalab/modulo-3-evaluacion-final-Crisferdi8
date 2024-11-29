@@ -5,7 +5,10 @@ function UserDetails({ character }) {
     console.log(character)
     return (
         <>
-            <div >
+            <section>
+                <img src="https://media2.giphy.com/media/Wm9TXX64elK2HvYHh6/200w.webp" alt="" />
+            </section>
+            <div className="description">
 
                 <img src={character.photo} alt={character.name} />
                 <h4>NOMBRE--{character.name}</h4>

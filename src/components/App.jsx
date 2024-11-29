@@ -74,6 +74,7 @@ function App() {
             <header className="container">
                 <img className="image" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Rick_and_Morty_title_card_%28cropped%29.png" alt="" />
 
+
             </header>
             <main className="container">
                 <Routes>

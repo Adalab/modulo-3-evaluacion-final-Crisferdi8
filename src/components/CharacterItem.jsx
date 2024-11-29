@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function CharacterItem({ characterData }) {
     return (
-        <li>
+        <li className="list">
             <Link to={`/character/${characterData.id}`}>
                 <img src={characterData.photo} alt={characterData.name} />
             </Link>
