@@ -7,7 +7,7 @@ function FilterByname({ onChangeName }) {
     return (
         <>
             <form className="form">
-                <label htmlFor="name">Nombre</label>
+                <label htmlFor="name"><strong>NOMBRE</strong></label>
                 <input type="text" id="name" onChange={handleChange} />
             </form>
 
