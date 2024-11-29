@@ -37,5 +37,9 @@ CharacterList: Muestra el listado de personajes.
 CharacterItem: Tarjeta individual para cada personaje.
 UserDetails: Página de detalle para un personaje específico.
 
+## Como arrancar la página
+Una vez que nos hayamos clonado el repositorio en nuestra carpeta deseada, solo tenemos que lanzar npm run dev y ahi se despliega nuestra página
+o, directamente con este enlace https://beta.adalab.es/modulo-3-evaluacion-final-Crisferdi8/#/
+
 
 
