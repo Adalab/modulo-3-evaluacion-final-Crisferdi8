@@ -81,7 +81,12 @@ function App() {
                     <Route path="/" element={(
                         <>
                             <Filters onChangeName={handleFilterName} />
-                            <CharacterList characters={filteredCharacters} />
+                            {filteredCharacters.length === 0 ? (
+                                <p>No se encontraron personajes.</p>
+                            ) : (
+                                <CharacterList characters={filteredCharacters} />
+                            )}
+
                         </>
                     )} />
                     <Route path="/character/:idCharacter" element={<UserDetails character={user} />} />
