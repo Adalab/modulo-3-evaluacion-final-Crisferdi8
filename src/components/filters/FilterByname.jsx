@@ -2,6 +2,7 @@
 
 function FilterByname({ onChangeName }) {
     const handleChange = (ev) => {
+        ev.preventDefault();
         onChangeName(ev.target.value);
     }
     return (
