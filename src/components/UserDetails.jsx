@@ -6,16 +6,16 @@ function UserDetails({ character }) {
     return (
         <>
             <section>
-                <img src="https://media2.giphy.com/media/Wm9TXX64elK2HvYHh6/200w.webp" alt="" />
+                <img className="gif" src="https://media2.giphy.com/media/Wm9TXX64elK2HvYHh6/200w.webp" alt="" />
             </section>
             <div className="description">
 
                 <img src={character.photo} alt={character.name} />
-                <h4>NOMBRE--{character.name}</h4>
-                <p>ESPECIE--{character.species}</p>
-                <p>EPISODIOS--{character.episodes}</p>
-                <p>PLANETA--{character.planet}</p>
-                <p>STATUS--{character.status}</p>
+                <h4>NOMBRE➩{character.name}</h4>
+                <p>ESPECIE➩{character.species}</p>
+                <p>EPISODIOS➩{character.episodes}</p>
+                <p>PLANETA➩{character.planet}</p>
+                <p>STATUS➩{character.status}</p>
 
 
             </div>
