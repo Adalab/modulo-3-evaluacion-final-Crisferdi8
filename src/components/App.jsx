@@ -48,7 +48,9 @@ function App() {
     const filteredCharacters = characters.filter((character) => {
         return character.name.toLowerCase().includes(filterName.toLowerCase());
     })
+        //ORDEN ALFABETICO
 
+        .sort((a, b) => a.name.localeCompare(b.name));
 
 
     //RUTA DINÁMICA
