@@ -83,6 +83,7 @@ function App() {
                     <Route path="/" element={(
                         <>
                             <Filters onChangeName={handleFilterName} />
+
                             {filteredCharacters.length === 0 ? (
                                 <p>No se encontraron personajes.</p>
                             ) : (
